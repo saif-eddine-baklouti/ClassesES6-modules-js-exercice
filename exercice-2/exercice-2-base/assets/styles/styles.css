@@ -1,0 +1,110 @@
+/* GENERIC */
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* ELEMENTS */
+
+body {
+    margin: 0;
+    padding: 8vw;
+}
+
+main {
+    margin-top: 50px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/* Form */
+form {
+    margin-top: 25px;
+}
+
+input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    width: 250px;
+}
+
+input[type="radio"] {
+    margin-top: 10px;
+    width: auto;
+}
+
+button {
+    margin-top: 40px;
+}
+
+
+/* OBJECTS */
+
+/* Form */
+.input-wrapper {
+    margin-top: 40px;
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 25px;
+}
+
+.revenu {
+    display: flex;
+}
+
+.revenu__inputs {
+    margin-left: 5px;
+}
+
+.revenu input {
+    width: 100px;
+}
+
+/* Erreur */
+.error:not(input) {
+    color: red;
+}
+
+.error input[type="radio"] + label  {
+    color: black;
+}
+
+.error input {
+    border-color: red;
+}
+
+.error-message {
+    margin-left: 8px;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+
+/* COMPONENTS */
+
+/* Thank */
+.thank {
+    opacity: 1;
+    margin-top: 50px;
+    transform: translateY(0);
+    transition: transform .3s ease-out;
+}
+
+.thank--hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
